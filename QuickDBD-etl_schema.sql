@@ -2,17 +2,29 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/DK2yeX
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
+DROP TABLE IF EXISTS House_Location;
+-- DROP TABLE House_Location CASCADE;
+DROP TABLE IF EXISTS Schools;
+-- DROP TABLE schools CASCADE;
+DROP TABLE IF EXISTS Home_Features;
+-- DROP TABLE Home_Features CASCADE;
+DROP TABLE IF EXISTS Sales_Data;
+-- DROP TABLE Sales_Data CASCADE;
+DROP TABLE IF EXISTS School_Rating;
+-- DROP TABLE School_Rating CASCADE;
 
-CREATE TABLE "Location" (
-    "MLS" int(8)   NOT NULL,
-    "Street_Number" varchar(6)   NOT NULL,
-    "Street_Name" varchar(50)   NOT NULL,
-    "Unit" varchar(6)   NOT NULL,
-    "City" varchar(25)   NOT NULL,
-    "Zip" int(5)   NOT NULL,
-    "County" varchar(20)   NOT NULL,
-    "Subdivision" varchar(25)   NOT NULL,
-    CONSTRAINT "pk_Location" PRIMARY KEY (
+
+
+CREATE TABLE House_Location (
+    "MLS" INT NOT NULL,
+    "Street_Number" VARCHAR(6)   NOT NULL,
+    "Street_Name" VARCHAR(50)   NOT NULL,
+    "Unit" VARCHAR(6)   NOT NULL,
+    "City" VARCHAR(25)   NOT NULL,
+    "Zip" VARCHAR(5)   NOT NULL,
+    "County" VARCHAR(20)   NOT NULL,
+    "Subdivision" VARCHAR(25)   NOT NULL,
+    CONSTRAINT "pk_house_location" PRIMARY KEY (
         "MLS"
      )
 );
@@ -22,7 +34,7 @@ CREATE TABLE "Schools" (
     "School_District" int(6)   NOT NULL,
     "Elementary" varchar(25)   NOT NULL,
     "High_School" varchar(25)   NOT NULL,
-    CONSTRAINT "pk_Schools" PRIMARY KEY (
+    CONSTRAINT "pk_schools" PRIMARY KEY (
         "MLS"
      )
 );
@@ -70,7 +82,7 @@ CREATE TABLE "School_Rating" (
      )
 );
 
-ALTER TABLE "Location" ADD CONSTRAINT "fk_Location_MLS" FOREIGN KEY("MLS")
+ALTER TABLE "House_Location" ADD CONSTRAINT "fk_Location_MLS" FOREIGN KEY("MLS")
 REFERENCES "Schools" ("MLS");
 
 ALTER TABLE "Schools" ADD CONSTRAINT "fk_Schools_Elementary" FOREIGN KEY("Elementary")
@@ -80,8 +92,8 @@ ALTER TABLE "Schools" ADD CONSTRAINT "fk_Schools_High_School" FOREIGN KEY("High_
 REFERENCES "School_Rating" ("School");
 
 ALTER TABLE "Home_Features" ADD CONSTRAINT "fk_Home_Features_MLS" FOREIGN KEY("MLS")
-REFERENCES "Location" ("MLS");
+REFERENCES "House_Location" ("MLS");
 
 ALTER TABLE "Sales_Data" ADD CONSTRAINT "fk_Sales_Data_MLS" FOREIGN KEY("MLS")
-REFERENCES "Location" ("MLS");
+REFERENCES "House_Location" ("MLS");
 
