@@ -1,7 +1,5 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/DK2yeX
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
+﻿
+DROP TABLE IF EXISTS "MLS";
 
 CREATE TABLE "MLS" (
     "MLS" int   NOT NULL,
@@ -10,23 +8,23 @@ CREATE TABLE "MLS" (
     "Street_Name" varchar(50)   NOT NULL,
     "City" varchar(25)   NOT NULL,
     "Zip" int   NOT NULL,
-    "County" varchar(20)   NOT NULL,
+    "County" varchar(20),
     "List_Price" int   NOT NULL,
-    "Market_Area" varchar(25)   NOT NULL,
+    "Market_Area" varchar(25),
     "Area" int   NOT NULL,
-    "Subdivision" varchar(25)   NOT NULL,
+    "Subdivision" varchar(25),
     "School_District" int   NOT NULL,
     "Elementary" varchar(25)   NOT NULL,
     "High_School" varchar(25)   NOT NULL,
-    "Year_Built" int   NOT NULL,
-    "Bedrooms" int   NOT NULL,
-    "Full_Baths" int   NOT NULL,
-    "Half_Baths" int   NOT NULL,
-    "Total_Baths" float   NOT NULL,
-    "Room_Count" int   NOT NULL,
-    "Fireplaces" int   NOT NULL,
-    "Stories" int   NOT NULL,
-    "Pool_Private" varchar(5)   NOT NULL,
+    "Year_Built" int,
+    "Bedrooms" int,
+    "Full_Baths" int,
+    "Half_Baths" int,
+    "Total_Baths" float,
+    "Room_Count" int,
+    "Fireplaces" int,
+    "Stories" int,
+    "Pool_Private" varchar(5),
     "Garages" int   NOT NULL,
     "Style" varchar(25)   NOT NULL,
     "DOM" int   NOT NULL,
@@ -37,12 +35,14 @@ CREATE TABLE "MLS" (
      )
 );
 
+DROP TABLE IF EXISTS "School_Rating";
+
 CREATE TABLE "School_Rating" (
     "Campus_Number" int   NOT NULL,
     "School" varchar(50)   NOT NULL,
     "District" varchar(50)   NOT NULL,
-    "2019_Rating" varchar(2)   NOT NULL,
-    "Yrs_Unacceptable" int   NOT NULL,
+    "2019_Rating" varchar(2),
+    "Yrs_Unacceptable" int,
     CONSTRAINT "pk_School_Rating" PRIMARY KEY (
         "School"
      )
