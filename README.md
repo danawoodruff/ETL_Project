@@ -5,10 +5,10 @@ Purchasing a home is typically one of the most important decisions a family unde
 <br>
 1. Extract data from Har.com and tea.texas.gov.<br>
    HAR.com provides data from the Houston Association of Realtors. The dataset includes homes for sale in the Houston metro area.  HAR.com provides filters for their data.  Homes were filtered using "Active" listing and "HISD (Houston Independent School District)" criteria.  Data was downloaded 06 Feb 2021 utilizing Texas real estate license #725751.<br>
-   ![HAR](images/HAR_data.png)<br>
+   ![HAR](images/HAR_data.PNG)<br>
 <br>
    TEA.texas.gov provides data from the Texas Education Agency. Texas provides annual academic accountability ratings to its public school districts, charters and schools. The ratings are based on performance on state standardized tests; graduation rates; and college, career, and military readiness outcomes. The ratings examine student achievement, school progress, and whether districts and campuses are closing achievement gaps among various student groups. Data was filtered to include only HISD (Houston Independent School District) schools.  Data was downloaded 06 Feb 2021 from the public site.<br>
-   ![TEA](images/TEA_data.png)<br>
+   ![TEA](images/TEA_data.PNG)<br>
 <br>
 2. Transform
    HAR.com - Some columns deemed unimportant to the home buyer, e.g., columns related to listing agent and office were dropped from the dataset.  Columns formatted as currency data types were converted to float type data.<br>
