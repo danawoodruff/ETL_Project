@@ -35,7 +35,7 @@ Purchasing a home is typically one of the most important decisions a family unde
 <br>
    The .sql version is uploaded to PGAdmin4 for table creation.<br>
    <br>
-   <p align="center"><img width="562" height="450" src="images/ERDimage.PNG"></p><br>
+   <p align="center"><img width="586" height="528" src="images/ERDimage.PNG"></p><br>
 <br>
 </div>   
    
