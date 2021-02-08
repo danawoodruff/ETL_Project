@@ -22,7 +22,7 @@ Purchasing a home is typically one of the most important decisions a family unde
    - Cleaned data is saved as a new .csv file and saved to the Resources folder.<br>
    - Column  <br>
 <br>
-   Each dataset's .csv file was imported into a Jupyter Notebook python file. There the data was examined and transformed into pandas dataframes. <br>
+   Each dataset's .csv file was imported into a Jupyter Notebook python file. There the data was examined and transformed into pandas dataframes. After cleaning the data was saved to a clean csv intended for export to POSTGRES.<br>
 <br>
 <h2>3. Load</h2><br>
    The ETL Pipeline is drawn using smart art and Microsoft Word.  References were made to online examples.
@@ -33,10 +33,13 @@ Purchasing a home is typically one of the most important decisions a family unde
    <br>
    <p align="center"><img width="524" height="612" src="images/ERDv6.png"></p><br>
 <br>
-   The .sql version is uploaded to PGAdmin4 for table creation. Tables were checked for correct importation and adjustments made as needed to ERD and data files.<br>
+   The .sql version is uploaded to PGAdmin4 for table creation. Tables were checked for correct importation and adjustments made as needed to ERD and data files. The clean data files are uploaded to populate the tables. <br>
    <br>
-   <p align="center"><img width="586" height="528" src="images/ERDimage.PNG"></p><br>
+   <p align="center"><img width="400" height="400" src="images/ERDimage.PNG"><img width="400" height="400" src="images/SQLTable.PNG"></p><br>
 <br>
+   Once the database with its two tables is created a backup, in SQL, is made. <br?
+<br>                                                                                    
+   <p align="center"><img width="586" height="528" src="images/Backup.PNG"></p>
 </div>   
    
 
