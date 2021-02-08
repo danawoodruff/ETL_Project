@@ -11,7 +11,6 @@ Purchasing a home is typically one of the most important decisions a family unde
    TEA.texas.gov (https://tea.texas.gov/) provides data from the Texas Education Agency. Texas provides annual academic accountability ratings to its public school districts, charters and schools. The ratings are based on performance on state standardized tests; graduation rates; and college, career, and military readiness outcomes. The ratings examine student achievement, school progress, and whether districts and campuses are closing achievement gaps among various student groups. Data was filtered to include only HISD (Houston Independent School District) schools.[TEA.texas.gov]  Data was downloaded 06 Feb 2021 from the public site.<br>
    <br>
    <p align="center"><img width="562" height="450" src="images/TEA_data.PNG"></p><br>
-<br>
 <h2>2. Transform</h2><br>
    HAR.com - Some columns deemed unimportant to the home buyer, e.g., columns related to listing agent and office, were dropped from the dataset.  Columns formatted as currency data types were converted to float data type.<br>
 <br>
@@ -27,7 +26,7 @@ Purchasing a home is typically one of the most important decisions a family unde
 <h2>3. Load</h2><br>
    The ETL Pipeline was drawn using smart art and Microsoft Word.  References were made to online examples.
    <br>
-   <p align="center"><img width="349" height="408" src="images/pipeline.png"></p><br>
+   <p align="center"><img width="400" height="408" src="images/pipeline.png"></p><br>
 <br>
    The ERD was created using free a QuickDBD template. This file was saved in .sql and as .png format. <br> 
    <br>
