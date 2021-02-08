@@ -25,15 +25,15 @@ Purchasing a home is typically one of the most important decisions a family unde
    Each dataset's .csv file was imported into a Jupyter Notebook python file. There the data was examined and transformed into pandas dataframes. <br>
 <br>
 <h2>3. Load</h2><br>
-   The ETL Pipeline was drawn using smart art and Microsoft Word.  References were made to online examples.
+   The ETL Pipeline is drawn using smart art and Microsoft Word.  References were made to online examples.
    <br>
    <p align="center"><img width="650" height="408" src="images/pipeline.png"></p><br>
 <br>
-   The ERD was created using free a QuickDBD template. This file was saved in .sql and as .png format. <br> 
+   The ERD is created using free a QuickDBD template. This file was saved in .sql and as .png format. <br> 
    <br>
    <p align="center"><img width="524" height="612" src="images/ERDv6.png"></p><br>
 <br>
-   The .sql version was uploaded to POAdmin4 for table creation.<br>
+   The .sql version is uploaded to POAdmin4 for table creation.<br>
 </div>   
    
 
