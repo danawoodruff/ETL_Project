@@ -35,11 +35,11 @@ Purchasing a home is typically one of the most important decisions a family unde
 <br>
    The .sql version is uploaded to PGAdmin4 for table creation. Tables were checked for correct importation and adjustments made as needed to ERD and data files. The clean data files are uploaded to populate the tables. <br>
    <br>
-   <p align="center"><img style="margin-right:25px;" width="400" height="400" src="images/ERDimage.PNG"><img width="400" height="400" src="images/SQLTable.PNG"></p><br>
+   <p align="center"><img style="margin-right:55px;" width="450" height="455" src="images/ERDimage.PNG"><img width="500" height="405" src="images/SQLTable.PNG"></p><br>
 <br>
-   Once the database with its two tables is created a backup, in SQL, is made. <br?
+   Once the database with its two tables is created a backup, in SQL, is made. <br>
 <br>                                                                                    
-   <p align="center"><img width="586" height="528" src="images/Backup.PNG"></p>
+   <p align="center"><img width="789" height="533" src="images/Backup.PNG"></p>
 </div>   
    
 
