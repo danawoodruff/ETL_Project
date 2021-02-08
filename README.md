@@ -1,5 +1,6 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0"
+
 <div style="background-image: url('images/background.png');">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"
 <h1>Extract, Transform, and Load</h1>
 <h2>Objective(s)</h2>
 <br>
