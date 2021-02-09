@@ -17,7 +17,7 @@ Purchasing a home is typically one of the most important decisions a family unde
    TEA.texas.gov (https://tea.texas.gov/) provides data from the Texas Education Agency. Texas provides annual academic accountability ratings to its public school districts, charters and schools. The ratings are based on performance on state standardized tests; graduation rates; and college, career, and military readiness outcomes. The ratings examine student achievement, school progress, and whether districts and campuses are closing achievement gaps among various student groups. Data was filtered to include only HISD (Houston Independent School District) schools.[TEA.texas.gov]  Data was downloaded 06 Feb 2021 from the public site.<br>
    <br>
    <p align="center"><img width="562" height="450" src="images/TEA_data.PNG"></p><br>
-<h2>2. Transform</h2><br>
+<h2>2. Transform</h2>
    HAR.com - Some columns deemed unimportant to the home buyer, e.g., columns related to listing agent and office, were dropped from the dataset.  Columns formatted as currency data types were converted to float data type.<br>
 <br>
    TEA.texas.gov - The pandemic in 2020 prevented school ratings from being calculated.  This column, and ratings prior to 2019, were dropped from the dataset.  Each school has a grade given to it in 2019 for their academic performance with "A" being the highest score and an "F" as the lowest.<br>
@@ -45,7 +45,7 @@ After cleaning the data was saved to a clean csv intended for export to POSTGRES
 <br>
    From Juypter Notebook, we created a connection to load the tables into Postgres for table creation and population. <br>
    <br>
-   <p align="center"><img width="821" height="607" src="images/Load.PNG"></p><br>
+   <p align="center"><img width="821" height="607" src="images/load.PNG"></p><br>
    <br>
    <p align="center"><img width="829" height="649" src="images/SQLTable.PNG"></p><br>
 <br>
