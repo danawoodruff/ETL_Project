@@ -17,19 +17,22 @@ Purchasing a home is typically one of the most important decisions a family unde
 <h2>2. Transform</h2>
    HAR.com - Some columns deemed unimportant to the home buyer, e.g., columns related to listing agent and office, were dropped from the dataset.  Columns formatted as currency data types were converted to float data type.<br>
 <br>
-   TEA.texas.gov - The pandemic in 2020 prevented school ratings from being calculated.  This column, and ratings prior to 2019, were dropped from the dataset.  Each school has a grade given to it in 2019 for their academic performance with "A" being the highest score and an "F" as the lowest.<br>
-
+   TEA.texas.gov - The pandemic in 2020 prevented school ratings from being calculated.  This column, and ratings prior to 2019, were dropped from the dataset.  Schools are assigned a grade for their academic performance with "A" being the highest score and an "F" as the lowest.<br>
+<br>
 Each dataset's .csv file was imported into a Jupyter Notebook python file. There the data was transformed into pandas dataframes for examination.<br>
 <br>
 The HAR data is an entity of homes for sale.  The raw dataset has twenty-eight columns with the MLS(Multiple Listing Service) number as an unique ID. In examining the data each field is independent from the others. As example, the number of garages does not depend on the number of bedrooms or the home type. The subdivision is not dependent on the street name or number of fireplaces. A high school can serve multiple market areas and can be paired with different elementary schools. Every home is in Harris County but the team kept that field in the event MLS dataset from other counties were included into the dataset as additional tables. No entities could be identified in the table. Each field is a characteristic of the home represented by the MLS number.<br>
 <br>
 The TEA data is an entity of schools. The campus number is the table's unique ID. Examination reveals no independent entities within the table. The ratings are typically scored by year but the raw data included a note that 2020 could not be scored due to the pandemic. The 2019 year data was selected.  The raw data labels each column with year and rating.  These two characteristics were split into separate columns.<br>
 <br>
-After cleaning the data was saved to a clean csv intended for export to POSTGRES.<br>
+As part of the normalization process a junction table is created utlizing the primary keys "mls" and "campus_number" from the clean datasets.<br>
+<br>
+After cleaning, the data is saved to a clean csv.<br>
+<br>
+Cleaning activities included:<br>
    - Column names were altered or shortened in some cases.  Spaces between words were replaced with underscores. <br>
    - Null values were managed by either replacing with zero or accepting the null values. <br>
    - Cleaned data is saved as a new .csv file and saved to the Resources folder.<br>
-   - Column  <br>
 <br>
 <h2>3. Load</h2><br>
    The ETL Pipeline is drawn using smart art and Microsoft Word.  References were made to online examples.
@@ -38,7 +41,7 @@ After cleaning the data was saved to a clean csv intended for export to POSTGRES
 <br>
    The ERD is created using free a QuickDBD template. This file was saved in .sql and as .png format. <br> 
    <br>
-   <p align="center"><img width="524" height="612" src="images/ERDv9.png"></p><br>
+   <p align="center"><img width="524" height="612" src="images/ERDv10.png"></p><br>
 <br>
    From Juypter Notebook, we created a connection to load the tables into Postgres for table creation and population. <br>
    <br>
