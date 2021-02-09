@@ -1,6 +1,6 @@
 
 <div style="background-image: url('images/background.png');">
-<p align="center"><img width="100%" height="144" src="images/header.png"></p><br>
+<p align="center"><img width="100%" height="144" src="images/header.png"></p>
 <h1>Extract, Transform, and Load</h1>
 <h2>Objective(s)</h2>
 <br>
@@ -45,6 +45,7 @@ After cleaning the data was saved to a clean csv intended for export to POSTGRES
    <p align="center"><img width="821" height="607" src="images/load.PNG"></p><br>
    <br>
    View in PGAdmin4:<br>
+   <br>
    <p align="center"><img width="829" height="649" src="images/SQLTable.PNG"></p><br>
 <p align="center"><img width="100%" height="100" src="images/background.png"></p><br>
 </div>   
