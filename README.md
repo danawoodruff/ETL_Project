@@ -1,9 +1,6 @@
 
 <div style="background-image: url('images/background.png');">
-
-<h2> Contributors</h2>
-<h3> Karla Murphy, Dana Woodruff, Phillecia Qualls, Troy Youngblood </h3>
-<br>
+<p align="center"><img width="100%" height="144" src="images/header.png"></p><br>
 <h1>Extract, Transform, and Load</h1>
 <h2>Objective(s)</h2>
 <br>
