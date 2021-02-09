@@ -2,12 +2,12 @@ DROP TABLE IF EXISTS mls;
 DROP TABLE IF EXISTS school_rating;
 
 CREATE TABLE school_rating (
-    Campus_Number INT   NOT NULL,
-    School  VARCHAR(50) PRIMARY KEY NOT NULL,
-    District VARCHAR(50)   NOT NULL,
-    Yrs_Unacceptable INT,
-	Rating VARCHAR(20),
-	Year INT
+    campus_number INT   NOT NULL,
+    school  VARCHAR(50) PRIMARY KEY NOT NULL,
+    district VARCHAR(50)   NOT NULL,
+    yrs_unacceptable INT,
+	rating VARCHAR(20),
+	year varchar(10)
 );
 
 SELECT * FROM school_rating;
