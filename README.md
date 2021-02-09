@@ -45,9 +45,9 @@ After cleaning the data was saved to a clean csv intended for export to POSTGRES
 <br>
    From Juypter Notebook, we created a connection to load the tables into Postgres for table creation and population. <br>
    <br>
-   <p align="center"><img style="border: 5px solid #555;width="524";height="530" src="images/ERDimage.PNG"></p><br>
+   <p align="center"><img width="821" height="607" src="images/Load.PNG"></p><br>
    <br>
-   <p align="center"><img width="857" height="655" src="images/SQLTable.PNG"></p><br>
+   <p align="center"><img width="829" height="649" src="images/SQLTable.PNG"></p><br>
 <br>
 
 </div>   
