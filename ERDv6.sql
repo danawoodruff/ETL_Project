@@ -6,7 +6,8 @@ CREATE TABLE school_rating (
     School  VARCHAR(50) PRIMARY KEY NOT NULL,
     District VARCHAR(50)   NOT NULL,
     Yrs_Unacceptable INT,
-	Rating_2019 VARCHAR(20)
+	Rating VARCHAR(20),
+	Year INT
 );
 
 SELECT * FROM school_rating;
