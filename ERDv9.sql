@@ -1,29 +1,17 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/DK2yeX
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
-CREATE TABLE "school_rating" (
-    "campus_number" int,
-    "school" varchar(50),
-    "district" varchar(50),
-    "yrs_unacceptable" int,
-    "rating" varchar(2),
-    "rating_yr" varchar(4),
-    CONSTRAINT "pk_school_rating" PRIMARY KEY (
-        "campus_number","school"
-    )
-);
+-- db name is etl_team5
+DROP TABLE IF EXISTS "mls"
 
 CREATE TABLE "mls" (
-    "mls" int,
+    "mls" int NOT NULL,
     "street_number" varchar(6),
     "street_name" varchar(50),
     "city" varchar(25),
     "zip" int,
     "county" varchar(20),
-    "subdivision" varchar(25),
-    "home_type" varchar(25),
+    "subdivision" varchar(250),
+    "home_type" varchar(250),
     "year_built" int,
     "bedrooms" int,
     "full_baths" int,
@@ -32,27 +20,38 @@ CREATE TABLE "mls" (
     "room_count" int,
     "fireplaces" int,
     "stories" int,
-    "pool_private" varchar(5),
+    "pool_private" varchar(50),
     "garages" int,
-    "style" varchar(25),
-    "list_price" int,
-    "market_area" varchar(25),
+    "style" varchar(50),
+    "list_price" int   NOT NULL,
+    "market_area" varchar(50),
     "area" int,
     "dom" int,
     "cdom" int,
-    "list_date" varchar(25),
+    "list_date" varchar(50),
     "school_district" int,
-    "elementary" varchar(25),
-    "high_school" varchar(25),
-    CONSTRAINT "pk_mls" PRIMARY KEY (
+    "elementary" varchar(50),
+    "high_school" varchar(50),
+    CONSTRAINT "pk_MLS" PRIMARY KEY (
         "mls"
     )
 );
 
+CREATE TABLE "school_rating" (
+    "campus_number" int   NOT NULL,
+    "school" varchar(50),
+    "district" varchar(50),
+    "yrs_unacceptable" int,
+    "rating" varchar(50),
+    "rating_yr" varchar(4),
+    CONSTRAINT "pk_School_Rating" PRIMARY KEY (
+        "campus_number","school"
+    )
+);
 
-ALTER TABLE "mls" ADD CONSTRAINT "fk_mls_elementary" FOREIGN KEY("elementary")
-REFERENCES "school_rating" ("school");
+ALTER TABLE "MLS" ADD CONSTRAINT "fk_MLS_elementary" FOREIGN KEY("elementary")
+REFERENCES "School_Rating" ("school");
 
-ALTER TABLE "mls" ADD CONSTRAINT "fk_mls_high_school" FOREIGN KEY("high_school")
-REFERENCES "school_rating" ("school");
+ALTER TABLE "MLS" ADD CONSTRAINT "fk_MLS_high_school" FOREIGN KEY("high_school")
+REFERENCES "School_Rating" ("school");
 
