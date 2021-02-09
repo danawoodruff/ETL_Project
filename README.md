@@ -47,9 +47,9 @@ After cleaning the data was saved to a clean csv intended for export to POSTGRES
    <br>
    <p align="center"><img width="821" height="607" src="images/load.PNG"></p><br>
    <br>
+   View in PGAdmin4:<br>
    <p align="center"><img width="829" height="649" src="images/SQLTable.PNG"></p><br>
-<br>
-
+<p align="center"><img width="100%" height="100" src="images/background.png"></p><br>
 </div>   
 
 
