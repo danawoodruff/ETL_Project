@@ -42,7 +42,7 @@ Cleaning activities included:<br>
 <br>
    The ERD is created using free a QuickDBD template. This file was saved in .sql and as .png format. <br> 
    <br>
-   <p align="center"><img width="832" height="820" src="images/ERDv11.png"></p><br>
+   <p align="center"><img width="503" height="817" src="images/ERDv11.png"></p><br>
 <br>
    From Juypter Notebook, we created a connection to load the tables into Postgres for table creation and population. <br>
    <br>
