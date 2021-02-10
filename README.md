@@ -31,7 +31,8 @@ After cleaning, the data is saved to a clean csv.<br>
 <br>
 Cleaning activities included:<br>
    - Column names were altered or shortened in some cases.  Spaces between words were replaced with underscores. <br>
-   - Null values were managed by either replacing with zero or accepting the null values. <br>
+   - Null values were managed by either replacing with zero or accepting the null values, e.g. number of fireplaces and garages.<br>
+   - Null values in year built are rare. In a real world application the HCAD.org dataset could be used to replace the null values in the HAR dataset for the year built. The HCAD.org dataset is 200 mb and impractical for this project.  The null values are replaced by random number generator.<br>
    - Cleaned data is saved as a new .csv file and saved to the Resources folder.<br>
 <br>
 <h2>3. Load</h2><br>
