@@ -50,7 +50,7 @@ Cleaning activities included:<br>
    <br>
    View in PGAdmin4:<br>
    <br>
-   <p align="center"><img width="958" height="686" src="images/load.PNG"></p><br>
+   <p align="center"><img width="872" height="655" src="images/load.PNG"></p><br>
 <p align="center"><img width="100%" height="100" src="images/background.png"></p><br>
 </div>   
 
