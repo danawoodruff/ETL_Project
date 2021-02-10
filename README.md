@@ -21,17 +21,18 @@ Purchasing a home is typically one of the most important decisions a family unde
 <br>
 Each dataset's .csv file was imported into a Jupyter Notebook python file. There the data was transformed into pandas dataframes for examination.<br>
 <br>
-The HAR data is an entity of homes for sale.  The raw dataset has twenty-eight columns with the MLS(Multiple Listing Service) number as an unique ID. In examining the data each field is independent from the others. As example, the number of garages does not depend on the number of bedrooms or the home type. The subdivision is not dependent on the street name or number of fireplaces. A high school can serve multiple market areas and can be paired with different elementary schools. Every home is in Harris County but the team kept that field in the event MLS dataset from other counties were included into the dataset as additional tables. No entities could be identified in the table. Each field is a characteristic of the home represented by the MLS number.<br>
+The HAR data is an entity of homes for sale.  The raw dataset has twenty-eight columns with the MLS(Multiple Listing Service) number as an unique ID. In examining the data each field is independent from the others. As example, the number of garages does not depend on the number of bedrooms or the home type. The subdivision is not dependent on the street name or number of fireplaces. No independent entities could be identified in the table.  Each field is a characteristic of the home represented by the MLS number. When examining school data it is observed that a high school can serve multiple market areas and can be paired with different elementary schools. Every home is in Harris County but the team kept that field in the event MLS dataset from other counties were included into the dataset as additional tables.  School District was considered for deletion but was kept in the event that, in the future, other MLS listings are added to dataset. It is possible that in the state of Texas there are schools with the same name but in different districts.<br>
 <br>
 The TEA data is an entity of schools. The campus number is the table's unique ID. Examination reveals no independent entities within the table. The ratings are typically scored by year but the raw data included a note that 2020 could not be scored due to the pandemic. The 2019 year data was selected.  The raw data labels each column with year and rating.  These two characteristics were split into separate columns.<br>
 <br>
-As part of the normalization process a junction table is created utlizing the primary keys "mls" and "campus_number" from the clean datasets.<br>
+As part of the normalization process a junction table is created utlizing the primary keys "mls" and "campus_number" from the clean datasets. Only the MLS number and the two school columns are retained. Then the MLS records are copied and pasted it below the existing data in Excel. In the first set of records the elementary school is deleted and in the second set the high school is deleted. Using VLOOKUP the campus number is retrieved from the TEA data for the schools that are now in a single column.<br>
 <br>
 After cleaning, the data is saved to a clean csv.<br>
 <br>
 Cleaning activities included:<br>
    - Column names were altered or shortened in some cases.  Spaces between words were replaced with underscores. <br>
-   - Null values were managed by either replacing with zero or accepting the null values. <br>
+   - Null values were managed by either replacing with zero or accepting the null values, e.g. number of fireplaces and garages.<br>
+   - Null values in year built are rare. In a real world application the HCAD.org dataset could be used to replace the null values in the HAR dataset for the year built. The HCAD.org dataset is 200 mb and impractical for this project so the decision was made to replace the null values by a random number generator ("=RANDBETWEEN()".<br>
    - Cleaned data is saved as a new .csv file and saved to the Resources folder.<br>
 <br>
 <h2>3. Load</h2><br>
@@ -41,15 +42,15 @@ Cleaning activities included:<br>
 <br>
    The ERD is created using free a QuickDBD template. This file was saved in .sql and as .png format. <br> 
    <br>
-   <p align="center"><img width="832" height="820" src="images/ERDv10.png"></p><br>
+   <p align="center"><img width="503" height="817" src="images/ERDv11.png"></p><br>
 <br>
    From Juypter Notebook, we created a connection to load the tables into Postgres for table creation and population. <br>
    <br>
-   <p align="center"><img width="821" height="607" src="images/load.PNG"></p><br>
+   <p align="center"><img width="1090" height="702" src="images/SQLCreate.PNG"></p><br>
    <br>
    View in PGAdmin4:<br>
    <br>
-   <p align="center"><img width="829" height="649" src="images/SQLTable.PNG"></p><br>
+   <p align="center"><img width="988" height="742" src="images/load.PNG"></p><br>
 <p align="center"><img width="100%" height="100" src="images/background.png"></p><br>
 </div>   
 
