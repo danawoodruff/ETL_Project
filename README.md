@@ -46,11 +46,11 @@ Cleaning activities included:<br>
 <br>
    From Juypter Notebook, we created a connection to load the tables into Postgres for table creation and population. <br>
    <br>
-   <p align="center"><img width="821" height="607" src="images/load.PNG"></p><br>
+   <p align="center"><img width="821" height="607" src="images/.PNG"></p><br>
    <br>
    View in PGAdmin4:<br>
    <br>
-   <p align="center"><img width="829" height="649" src="images/SQLTable.PNG"></p><br>
+   <p align="center"><img width="640" height="460" src="images/load.PNG"></p><br>
 <p align="center"><img width="100%" height="100" src="images/background.png"></p><br>
 </div>   
 
