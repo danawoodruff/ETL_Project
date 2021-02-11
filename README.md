@@ -8,6 +8,9 @@ Purchasing a home is typically one of the most important decisions a family unde
 <br>
 <h2> Database Replication Instructions</h2>
 The first step into replicating this project is to analyze and create an <a href="https://github.com/plqualls/ETL_Project/blob/main/ERDv11.sql">ERDv11.</a>
+
+* As an alternative process a notebook was created in which transformation was primarily with Python. The endpoint is identical to the original v11 notebook.
+* Also, to run the jupyter notebook a secrets.py file with your username= "postgres" and password= "password_here" should be added.
 <br>
 To reproduce the pipeline, run the Jupyter Notebook that is included in the repository called <a href="https://github.com/plqualls/ETL_Project/blob/main/Master_file_v11.ipynb">Master_file_v11.</a>    
 <br>
