@@ -7,11 +7,12 @@
 Purchasing a home is typically one of the most important decisions a family undertakes.  In 2020 $18.4 billion in property was sold in Harris County with another $58.2 million in leases.  For many home buyers the quality of the schools is a critical aspect for home selection. 
 <br>
 <h2> Database Replication Instructions</h2>
-The first step into replicating this project is to analyze and create an <a href="https://github.com/danawoodruff/ETL_Project/blob/main/ERDv11.sql">ERDv11.</a><br><br>
-* To reproduce the pipeline, run the Jupyter Notebook that is included in the repository called <a href="https://github.com/danawoodruff/ETL_Project/blob/main/Master_file_v11.ipynb">Master_file_v11.</a>
-   
-* As an alternative process a notebook was created in which transformation was primarily with Python. The endpoint is identical to the original v11 notebook: [Alt_Master_v11](https://github.com/danawoodruff/ETL_Project/blob/main/Alt_Master_v11.ipynb).<br><br>
-
+The first step into replicating this project is to analyze and create an <a href="https://github.com/danawoodruff/ETL_Project/blob/main/ERDv11.sql">ERDv11.</a><br>
+<br>
+* To reproduce the pipeline, run the Jupyter Notebook that is included in the repository: [Master_file_v11](https://github.com/danawoodruff/ETL_Project/blob/main/Master_file_v11.ipynb)
+<br>  
+* As an alternative process a notebook was created in which transformation was primarily with Python. The endpoint is identical to the original v11 notebook: [Alt_Master_v11](https://github.com/danawoodruff/ETL_Project/blob/main/Alt_Master_v11.ipynb).<br>
+<br>
 * Also, to run the jupyter notebook a secrets.py file with your username= "postgres" and password= "password_here" should be added.<br>    
 <br>
 <h2>1. Extract data from HAR.com and TEA.texas.gov.</h2><br>
