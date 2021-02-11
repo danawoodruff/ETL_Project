@@ -10,7 +10,7 @@ Purchasing a home is typically one of the most important decisions a family unde
 The first step into replicating this project is to analyze and create an <a href="https://github.com/danawoodruff/ETL_Project/blob/main/ERDv11.sql">ERDv11.</a><br>
 <br>
    
-* To reproduce the pipeline, run the Jupyter Notebook that is included in the repository: <a href="https://github.com/danawoodruff/ETL_Project/blob/main/Master_file_v11.ipynb>Master_file_v11.</a><br>  
+* To reproduce the pipeline, run the Jupyter Notebook that is included in the repository: <a href=""https://github.com/danawoodruff/ETL_Project/blob/main/Master_file_v11.ipynb">Master_file_v11.</a><br>  
    
 * As an alternative process a notebook was created in which transformation was primarily with Python. The endpoint is identical to the original v11 notebook: <a href="https://github.com/danawoodruff/ETL_Project/blob/main/Alt_Master_v11.ipynb">Alt_Master_v11.</a><br>
 <br>
