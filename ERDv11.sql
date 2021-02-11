@@ -2,6 +2,9 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/DK2yeX
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
+DROP TABLE IF EXIST mls;
+DROP TABLE IF EXIST school_rating;
+DROP TABLE IF EXIST junction_table;
 
 CREATE TABLE "mls" (
     "mls" int   NOT NULL,
@@ -37,6 +40,8 @@ CREATE TABLE "mls" (
      )
 );
 
+SELECT * FROM mls;
+
 CREATE TABLE "school_rating" (
     "campus_number" int   NOT NULL,
     "school" varchar(50)   NOT NULL,
@@ -49,14 +54,19 @@ CREATE TABLE "school_rating" (
      )
 );
 
+SELECT * FROM school_rating;
+
 CREATE TABLE "junction_table" (
     "mls" int   NOT NULL,
     "campus_number" int   NOT NULL
 );
+
+SELECT * FROM junction_table;
 
 ALTER TABLE "junction_table" ADD CONSTRAINT "fk_junction_table_mls" FOREIGN KEY("mls")
 REFERENCES "mls" ("mls");
 
 ALTER TABLE "junction_table" ADD CONSTRAINT "fk_junction_table_campus_number" FOREIGN KEY("campus_number")
 REFERENCES "school_rating" ("campus_number");
+
 
