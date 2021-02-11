@@ -7,7 +7,8 @@
 Purchasing a home is typically one of the most important decisions a family undertakes.  In 2020 $18.4 billion in property was sold in Harris County with another $58.2 million in leases.  For many home buyers the quality of the schools is a critical aspect for home selection. 
 <br>
     To reproduce the pipeline, run the Jupyter Notebook that is included in the repository:
-    1. [Master_file_v11](https://github.com/plqualls/ETL_Project/blob/main/Master_file_v11.ipynb)
+    
+    1. [Master_file_v11.ipynb](Master_file_v11.ipynb)
     <br>
 <h2>1. Extract data from HAR.com and TEA.texas.gov.</h2><br>
    HAR.com (https://www.har.com/) provides data from the Houston Association of Realtors. The dataset includes homes for sale in the Houston metro area.  HAR.com provides filters for their data.  Homes were filtered using "Active" listing and "HISD (Houston Independent School District)" criteria.  Data was downloaded 06 Feb 2021 utilizing Texas real estate license #725751.<br>
