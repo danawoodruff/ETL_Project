@@ -8,13 +8,11 @@ Purchasing a home is typically one of the most important decisions a family unde
 <br>
 <h2> Database Replication Instructions</h2>
 The first step into replicating this project is to analyze and create an <a href="https://github.com/danawoodruff/ETL_Project/blob/main/ERDv11.sql">ERDv11.</a><br><br>
-* To replicate the database the user only needs to run the Jupyter Notebook.: <a href="https://github.com/danawoodruff/ETL_Project/blob/main/Master_file_v11.ipynb">Master_v11.</a><br><br>
+* To reproduce the pipeline, run the Jupyter Notebook that is included in the repository called <a href="https://github.com/danawoodruff/ETL_Project/blob/main/Master_file_v11.ipynb">Master_file_v11.</a>
    
 * As an alternative process a notebook was created in which transformation was primarily with Python. The endpoint is identical to the original v11 notebook: [Alt_Master_v11](https://github.com/danawoodruff/ETL_Project/blob/main/Alt_Master_v11.ipynb).<br><br>
 
-* Also, to run the jupyter notebook a secrets.py file with your username= "postgres" and password= "password_here" should be added.<br>
-<br>
-To reproduce the pipeline, run the Jupyter Notebook that is included in the repository called <a href="https://github.com/plqualls/ETL_Project/blob/main/Master_file_v11.ipynb">Master_file_v11.</a>    
+* Also, to run the jupyter notebook a secrets.py file with your username= "postgres" and password= "password_here" should be added.<br>    
 <br>
 <h2>1. Extract data from HAR.com and TEA.texas.gov.</h2><br>
    HAR.com (https://www.har.com/) provides data from the Houston Association of Realtors. The dataset includes homes for sale in the Houston metro area.  HAR.com provides filters for their data.  Homes were filtered using "Active" listing and "HISD (Houston Independent School District)" criteria.  Data was downloaded 06 Feb 2021 utilizing Texas real estate license #725751.<br>
