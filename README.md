@@ -7,7 +7,7 @@
 Purchasing a home is typically one of the most important decisions a family undertakes.  In 2020 $18.4 billion in property was sold in Harris County with another $58.2 million in leases.  For many home buyers the quality of the schools is a critical aspect for home selection. 
 <br>
 <h2> Database Replication Instructions</h2>
-The first step into replicating this project is to analyze and create an<a href="https://github.com/plqualls/ETL_Project/blob/main/ERDv11.sql">ERDv11.</a>
+The first step into replicating this project is to analyze and create an <a href="https://github.com/plqualls/ETL_Project/blob/main/ERDv11.sql">ERDv11.</a>
 <br>
 To reproduce the pipeline, run the Jupyter Notebook that is included in the repository called <a href="https://github.com/plqualls/ETL_Project/blob/main/Master_file_v11.ipynb">Master_file_v11</a>    
 <br>
